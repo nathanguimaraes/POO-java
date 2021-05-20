@@ -38,6 +38,12 @@ public class Estoque extends Produto{
         return quantidade_estoque;
     }
     
+    public void setposVenda(int quantidade_produtos_venda){
+        this.quantidade_estoque =  quantidade_produtos_venda - this.quantidade_estoque ;
+    }
+    public int getposVenda(){
+        return quantidade_estoque;
+    }
     
 
 

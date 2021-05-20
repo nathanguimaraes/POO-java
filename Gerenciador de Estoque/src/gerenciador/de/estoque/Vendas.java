@@ -28,12 +28,6 @@ package gerenciador.de.estoque;
     this.quantidade_produtos_venda = quantidade_produtos_venda;
     }
 
-
-    
-
-
-
-
     
 //métodos codigo_venda
     public void setCodigoVenda(int codigo_venda){
@@ -61,8 +55,13 @@ package gerenciador.de.estoque;
     }
    
 //métodos quantidade_produtos_venda
-     public void setQuantidadeProdutosVenda(int quantidade_produtos_venda){
+    public void setQuantidadeProdutosVenda(int quantidade_produtos_venda){
          this.quantidade_produtos_venda = quantidade_produtos_venda;
     }
+    
+    public int getQuantidadeProdutosVenda(){
+        return quantidade_produtos_venda;
+    }
+
 }
 

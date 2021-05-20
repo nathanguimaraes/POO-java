@@ -64,16 +64,20 @@ public class GerenciadorDeEstoque {
      
            Vendas RealizarVenda = new Vendas();
            Produto CadastrarProduto = new Produto();
+           Estoque ManterProduto = new Estoque();
           
            RealizarVenda.setCodigoVenda(Integer.parseInt(JOptionPane.showInputDialog("Digite o codigo da venda: \n")));
           //validacao baseada no codigo do produto
-      
-
-          if(RealizarVenda.getCodigoVenda()== CadastrarProduto.getCodigoProduto()){
-   
           RealizarVenda.setCodigoFuncionarioVenda(JOptionPane.showInputDialog("Digite seu codigo de funcionario: \n"));
+          
           RealizarVenda.setQuantidadeProdutosVenda(Integer.parseInt(JOptionPane.showInputDialog("Insíra a quantidade de produtos que seram vendidos: \n")));
-            //quantidade de produtos a serem vendidos<---
+            
+       
+       ManterProduto.setposVenda(RealizarVenda.getQuantidadeProdutosVenda());
+       //quantidade de produtos a serem vendidos<---
+       
+        JOptionPane.showMessageDialog(null, "Quantidades de Produtos no Estoque após a venda é: "+ ManterProduto.getposVenda());
+  
           }
          
       }
@@ -82,7 +86,7 @@ public class GerenciadorDeEstoque {
    
    }
 
-    }
+    
 
     
 

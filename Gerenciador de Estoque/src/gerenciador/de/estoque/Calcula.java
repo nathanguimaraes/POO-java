@@ -11,5 +11,5 @@ package gerenciador.de.estoque;
  */
 public abstract class Calcula implements Operacoes {
     
-    public abstract void subtrai();
+    public abstract void descontos();
 }
